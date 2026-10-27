@@ -1,0 +1,63 @@
+{
+  "_설명": "geo/site-plan.json 모양. _ 로 시작하는 칸은 쓰지 않는다. 문구 칸은 site-copy.json · concept.json · 채팅에서 받은 사실로만 채운다.",
+  "date": "2026-10-28",
+  "mode": "build",
+  "_mode": "build = Claude Code 로 짓기 · check = 빌더 · 이미 있는 사이트 (점검만)",
+  "siteStatus": "아직 없음",
+  "method": "Claude Code 로 새로 짓기",
+  "domain": "무료 주소로",
+  "url": "https://onsae-bakery.vercel.app",
+  "_url": "끝에 / 없이. 무료 주소면 예정 이름으로. 바뀌면 고치고 build.mjs --update",
+  "name": "온새 펫베이커리",
+  "nameEn": "Onsae Pet Bakery",
+  "type": "brand",
+  "schemaType": "Organization",
+  "_schemaType": "Person · Organization · LocalBusiness · MedicalClinic (references/pages.md)",
+  "oneLine": "알레르기 있는 강아지를 위해, 원재료 5가지 이하로 만드는 망원동 강아지 수제 간식 공방",
+  "introShort": "원재료 5가지 이하, 재료표를 다 공개하는 망원동 강아지 수제 간식 공방",
+  "keyword": "강아지 수제 간식",
+  "area": "망원동",
+  "action": "구매 · 예약",
+  "regulated": false,
+  "sameAs": ["https://instagram.com/onsae.bakery"],
+  "contact": { "email": "", "phone": "", "address": "", "hours": "" },
+  "_contact": "주소를 넣으면 구조화 데이터에도 들어간다. 공개하고 싶을 때만",
+  "verify": { "google": "", "naver": "", "bing": "" },
+  "_verify": "geo-index 가 채운다",
+  "locales": {
+    "en": { "title": "", "description": "", "oneLine": "", "introShort": "", "menu": "English", "sections": [] }
+  },
+  "_locales": "site-copy.json 의 locales 를 그대로. 없으면 {}",
+  "pages": [
+    {
+      "id": "home",
+      "slug": "/",
+      "menu": "홈",
+      "inMenu": false,
+      "who": "강아지가 알레르기가 있는 보호자",
+      "keyword": "강아지 수제 간식",
+      "answer": "원재료 5가지 이하로 만드는 강아지 수제 간식",
+      "next": "주문",
+      "title": "알레르기 강아지를 위한 수제 간식 공방 | 온새 펫베이커리",
+      "description": "",
+      "h1": "알레르기 있는 강아지를 위해, 원재료 5가지 이하로 만드는 수제 간식",
+      "lead": "",
+      "cta": { "label": "주문하기", "href": "/order" },
+      "sections": [
+        { "type": "cards", "heading": "이렇게 만들어요", "items": [{ "title": "", "body": "" }] },
+        { "type": "text", "heading": "", "body": "" },
+        { "type": "todo", "note": "모르는 사실은 여기에 · 사이트에 안 나가요" }
+      ]
+    }
+  ],
+  "design": {
+    "mood": "따뜻한 · 손으로 만든 · 차분한",
+    "colors": { "main": "#6b4f36", "accent": "#b7834d", "bg": "#faf7f2", "ink": "#2a2420" },
+    "colorName": "원목 갈색 + 크림",
+    "fonts": { "heading": "Gowun Batang", "body": "Pretendard" },
+    "fontName": "고운바탕 + 프리텐다드",
+    "shape": "round"
+  },
+  "humanTodo": ["vercel.com 가입 (GitHub 계정으로)", "site 폴더를 GitHub 에 올리고 Vercel 에서 가져오기", "배포 주소를 이 창에 붙이기"],
+  "answers": [{ "step": "1단계", "q": "사이트는 지금 어떤 상태예요?", "a": "아직 없어요" }]
+}
